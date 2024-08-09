@@ -1,4 +1,158 @@
-.App {
+/* src/App.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* The Flexbox container for the app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar Styling */
+nav {
+  background-color: #343a40;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar hover effect */
+nav:hover {
+  background-color: #495057;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+header {
+  background-image: url('https://source.unsplash.com/random/1600x900');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Content Styling */
+.content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideInUp 0.5s ease-in-out;
+}
+
+/* Slide-in Animation */
+@keyframes slideInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Footer Styling */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Button Styling (for notifications or any other buttons) */
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Adding smooth scroll for the page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    margin: 10px;
+    padding: 1rem;
+  }
+
+  header {
+    padding: 2rem 1rem;
+  }
+
+  footer {
+    padding: 0.5rem;
+  }
+}
+
+
+/* --------------------------------------------------------------- */
+
+/* Ensure the body and html take full height */
+/* html, body {
+  height: 100%;
+  margin: 0;
+} */
+
+/* Flexbox container to manage layout */
+/* .app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+} */
+
+/* Flexbox for the main content to push the footer down */
+/* .main-content {
+  flex: 1;
+  padding: 20px;
+} */
+
+/* Footer styling */
+/* footer {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  width: 100%;
+} */
+
+/* ------------------------------------------------------------------------- */
+
+/* .App {
   text-align: center;
 }
 
@@ -24,33 +178,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-/* src/App.css */
-/* Ensure the body and html take full height */
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-/* Flexbox container to manage layout */
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Flexbox for the main content to push the footer down */
-.main-content {
-  flex: 1;
-  padding: 20px;
-}
-
-/* Footer styling */
-footer {
-  background-color: #f1f1f1;
-  padding: 1rem;
-  text-align: center;
-  border-top: 1px solid #ddd;
-  width: 100%;
-}
+} */

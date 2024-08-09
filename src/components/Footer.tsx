@@ -1,5 +1,6 @@
 // src/components/Footer.tsx
 import React from 'react';
+import './Footer.css';
 
 const Footer: React.FC = () => {
     return (
@@ -8,7 +9,7 @@ const Footer: React.FC = () => {
         //     <p className="text-center">© 2024 Your Company</p>
         //   </div>
         // </footer>
-        <footer>
+        <footer className="footer">
             <p>© 2024 My React App. All rights reserved.</p>
         </footer>
     );
