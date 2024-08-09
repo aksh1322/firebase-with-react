@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +24,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* src/App.css */
+/* Ensure the body and html take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flexbox container to manage layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Flexbox for the main content to push the footer down */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  width: 100%;
 }
