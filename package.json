@@ -10,22 +10,25 @@
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "firebase": "^10.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-router-dom": "^6.26.0",
     "react-scripts": "5.0.0",
     "typescript": "^4.9.0"
   },
   "devDependencies": {
+    "@types/node": "^18.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "@types/node": "^18.0.0",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^8.0.0",
     "eslint-plugin-react": "^7.0.0",
     "eslint-plugin-react-hooks": "^4.0.0",
-    "prettier": "^2.5.0",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0"
+    "prettier": "^2.5.0"
   },
   "eslintConfig": {
     "extends": [
